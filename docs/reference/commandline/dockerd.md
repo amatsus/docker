@@ -44,6 +44,7 @@ Options:
       --dns list                              DNS server to use (default [])
       --dns-opt list                          DNS options to use (default [])
       --dns-search list                       DNS search domains to use (default [])
+      --enable-secrets                        Enable RHEL secrets
       --exec-opt list                         Runtime execution options (default [])
       --exec-root string                      Root directory for execution state files (default "/var/run/docker")
       --experimental                          Enable experimental features
@@ -1143,6 +1144,7 @@ This is a full example of the allowed configuration options on Linux:
 	"dns": [],
 	"dns-opts": [],
 	"dns-search": [],
+	"enable-secrets": true,
 	"exec-opts": [],
 	"exec-root": "",
 	"experimental": false,
@@ -1234,6 +1236,7 @@ This is a full example of the allowed configuration options on Windows:
     "dns": [],
     "dns-opts": [],
     "dns-search": [],
+    "enable-secrets": true,
     "exec-opts": [],
     "experimental": false,
     "storage-driver": "",
